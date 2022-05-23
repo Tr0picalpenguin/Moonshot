@@ -12,6 +12,8 @@
 		41078B93274DB4D2003BD4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41078B91274DB4D2003BD4FA /* Main.storyboard */; };
 		41078B95274DB4D4003BD4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41078B94274DB4D4003BD4FA /* Assets.xcassets */; };
 		41078B98274DB4D4003BD4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41078B96274DB4D4003BD4FA /* LaunchScreen.storyboard */; };
+		EDA2C3A7283C1577006CE083 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C3A6283C1577006CE083 /* Coin.swift */; };
+		EDA2C3A9283C164B006CE083 /* CoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C3A8283C164B006CE083 /* CoinController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		41078B94274DB4D4003BD4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41078B97274DB4D4003BD4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41078B99274DB4D4003BD4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA2C3A6283C1577006CE083 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		EDA2C3A8283C164B006CE083 /* CoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		41078B8A274DB4D2003BD4FA /* CoinBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				EDA2C3A5283C155A006CE083 /* Controllers */,
+				EDA2C3A4283C1549006CE083 /* Model */,
 				41078B9F274DB4E0003BD4FA /* Storyboards */,
 				41078BA0274DB4EE003BD4FA /* Supporting Files */,
 			);
@@ -78,6 +84,30 @@
 				41078B99274DB4D4003BD4FA /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDA2C3A1283C14D3006CE083 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2C3A8283C164B006CE083 /* CoinController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		EDA2C3A4283C1549006CE083 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2C3A6283C1577006CE083 /* Coin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDA2C3A5283C155A006CE083 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2C3A1283C14D3006CE083 /* Model Controller */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA2C3A9283C164B006CE083 /* CoinController.swift in Sources */,
 				41078B8C274DB4D2003BD4FA /* AppDelegate.swift in Sources */,
 				41078B8E274DB4D2003BD4FA /* SceneDelegate.swift in Sources */,
+				EDA2C3A7283C1577006CE083 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
