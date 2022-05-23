@@ -14,6 +14,7 @@
 		41078B98274DB4D4003BD4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41078B96274DB4D4003BD4FA /* LaunchScreen.storyboard */; };
 		EDA2C3A7283C1577006CE083 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C3A6283C1577006CE083 /* Coin.swift */; };
 		EDA2C3A9283C164B006CE083 /* CoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C3A8283C164B006CE083 /* CoinController.swift */; };
+		EDA2C3AD283C2753006CE083 /* CoinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C3AC283C2753006CE083 /* CoinTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41078B99274DB4D4003BD4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA2C3A6283C1577006CE083 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		EDA2C3A8283C164B006CE083 /* CoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinController.swift; sourceTree = "<group>"; };
+		EDA2C3AC283C2753006CE083 /* CoinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA2C3A1283C14D3006CE083 /* Model Controller */,
+				EDA2C3AC283C2753006CE083 /* CoinTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA2C3AD283C2753006CE083 /* CoinTableViewController.swift in Sources */,
 				EDA2C3A9283C164B006CE083 /* CoinController.swift in Sources */,
 				41078B8C274DB4D2003BD4FA /* AppDelegate.swift in Sources */,
 				41078B8E274DB4D2003BD4FA /* SceneDelegate.swift in Sources */,
