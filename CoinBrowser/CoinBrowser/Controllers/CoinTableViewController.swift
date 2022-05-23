@@ -11,8 +11,13 @@ class CoinTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        CoinController.fetchCoins { _ in
-            
+       
+        CoinController.fetchCoins { success in
+            if success {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
         }
     }
 
@@ -20,19 +25,18 @@ class CoinTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return CoinController.sharedInstance.coins.count
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "coinCell", for: indexPath) as UITableViewCell
+        let coin = CoinController.sharedInstance.coins[indexPath.row]
+        cell.textLabel?.text = coin.name
+        cell.detailTextLabel?.text = "Symbol: \(coin.symbol), id: \(coin.id)"
         return cell
     }
-    */
+   
 
     /*
     // Override to support conditional editing of the table view.

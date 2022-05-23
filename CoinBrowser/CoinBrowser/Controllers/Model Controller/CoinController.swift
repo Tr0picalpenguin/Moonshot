@@ -45,7 +45,7 @@ class CoinController {
                     for coinDictionary in topLevelArrayOfCoinDictionaries {
                         if let id = coinDictionary["id"], let symbol = coinDictionary["symbol"], let name = coinDictionary["name"] {
                             let parcedCoin = Coin(id: id, symbol: symbol, name: name)
-                            coins.append(parcedCoin)
+                            CoinController.sharedInstance.coins.append(parcedCoin)
                         }
                     }
                 }
